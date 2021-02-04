@@ -9,13 +9,22 @@ public class Main {
     int highestGrade = scan.nextInt();
     System.out.println("What is your lowest grade in class.");
     int lowestGrade = scan.nextInt();
+    int ave = aveGrade(lowestGrade, highestGrade);
+    System.out.println("Your average grade is " + ave);
+    System.out.println("I graded two new tests!");
+    int tests = scan.nextInt();
+     System.out.println("Here is your new average grade!");
   }
+static int tests(int num1, int num2) {
+    int tests = num1 + num2;
+    int ave = num1 / num2;
+    return tests;
+}
 
-  // method calculates ave
   static int aveGrade(int lowestGrade, int highestGrade) {
     int grade = lowestGrade + highestGrade;
     int ave = grade / 2;
     return ave;
-  
-    }
+   
   }
+}
